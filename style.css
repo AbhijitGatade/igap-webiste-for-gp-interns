@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #e1f5e6;
+  }
+
+  .topnav img{
+    float: left;
+  }
+  .topnav div{
+    float: right;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: rgb(103, 9, 9);
+    color: white;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive .menu{
+      float: left;
+      width: 100%;
+      display: block;
+      text-align: left;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  section{
+    height: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  section h1{
+    text-align: center;
+  }
+
+  #home{
+    background-color: bisque;
+  }
+
+  #home img{
+    width: 400px;
+  }
+
+  #about{
+    background-color: brown;
+  }
+  #about img{
+    width: 400px;
+  }
+  #services{
+    background-color: aquamarine;
+  }
+  #gallery{
+    background-color: darkgoldenrod;
+  }
+  #contact{
+    background-color: darkorchid;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 600px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+    #home img{
+        width: 200px;
+      }
+      #about img{
+        width: 200px;
+      }
+  }
+
+  footer{
+    background-color: aqua;
+    padding: 50px;
+    text-align: center;
+  }
